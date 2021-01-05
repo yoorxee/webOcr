@@ -43,7 +43,7 @@ docker run --rm -v ${PWD}:/data 53349c6654c6 tesseract /data/WechatIMG315.jpeg /
 tesseract /11.jpeg out -l chi_sim --dpi 300
 ```
 
-##示例
+## 示例
 ```
 curl -vv -X POST -F file=@test.jpeg "http://81.70.50.12:8084/ocr/upload"
 ```
@@ -56,12 +56,12 @@ curl -vv -X POST -F file=@test.jpeg "http://81.70.50.12:8084/ocr/upload"
 ```
 
 # 原理
-###历史
+### 历史
 Tesseract项目最初由惠普实验室支持，1996年被移植到Windows上，1998年进行了C++化。在2005年Tesseract由惠普公司宣布开源。2006年到现在，都由Google公司开发。
-###特性
+### 特性
 目前，Tesseract可以识别超过100种语言。也可以用来训练其它的语言。
 源码包提供了一个OCR的引擎——libtesseract以及一个命令行程序——tesseract。
 Tesseract支持多种输出格式，如：普通文本、html、pdf等。
-###升级
+### 升级
 Tesseract 该软件包包含一个OCR引擎 -  libtesseract和一个命令行程序 -  tesseract。 Tesseract 4增加了一个基于OCR引擎的新神经网络（LSTM），该引擎专注于线路识别，但仍然支持Tesseract 3的传统Tesseract OCR引擎，该引擎通过识别字符模式来工作。通过使用Legacy OCR Engine模式（--oem 0）启用与Tesseract 3的兼容性。它还需要训练有素的数据文件，这些文件支持传统引擎。
 
